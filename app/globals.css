@@ -29,10 +29,15 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -66,4 +71,24 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 2px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2); /* Latar belakang track scrollbar */
+  border-radius: 10px; /* Sudut bulat */
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; /* Warna dan gradien untuk scrollbar */
+  border-radius: 10px; /* Sudut bulat */
+  transition: background 0.3s; /* Transisi saat hover */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; /* Warna saat hover */
 }
